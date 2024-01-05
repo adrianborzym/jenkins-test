@@ -4,13 +4,16 @@ pipeline {
             stage('Build') {
                 parallel {
                     stage('Build1'){
-                        echo "make build1"
+                        steps{ echo "make build1" }
+                        
                     }
                     stage('Build2'){
-                        echo "make Build2"
+                        steps { echo "make Build2" }
+                        
                     }
                     stage('Build3'){
-                        echo "make Build3"
+                        steps { echo "make Build3" }
+                        
                     }
                 }
         }
