@@ -2,18 +2,16 @@ pipeline {
     agent any
     stages {
             stage('Build') {
-                steps {
                 parallel {
-                    step('Build1'){
+                    stage('Build1'){
                         echo "make build1"
                     }
-                    step('Build2'){
+                    stage('Build2'){
                         echo "make Build2"
                     }
-                    step('Build3'){
+                    stage('Build3'){
                         echo "make Build3"
                     }
-                }
                 }
         }
     }
