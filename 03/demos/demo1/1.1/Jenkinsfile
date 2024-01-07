@@ -9,8 +9,14 @@ pipeline {
             steps {
                 echo "Sprawdzam zależności..."
                 sh '''
+<<<<<<< HEAD
                     get version
                     docker version
+=======
+                  git version
+                  docker version
+
+>>>>>>> bb86a8b13b98d4e1b1902dd7814f6a16c3fd3fa3
                 '''
             }
         }
